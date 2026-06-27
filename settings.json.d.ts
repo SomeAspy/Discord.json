@@ -71,6 +71,13 @@ export interface SettingsJson {
   MIN_HEIGHT: number;
   trayBalloonShown: boolean;
   asyncVideoInputDeviceInit: boolean;
+
+  /**
+   * Points to the respective endpoint for Discord.
+   * ptb has ptb.discord.com, etc.
+   * @default "https://discord.com/app"
+   */
+  WEBAPP_ENDPOINT: string;
   /**
    * @default "experimental"
    */
