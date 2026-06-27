@@ -21,7 +21,7 @@ export interface SettingsJson {
    */
   offloadAdmControls: boolean;
   /**
-   * @default [Windows: Undefined | Linux: true]
+   * @default [Linux: true]
    */
   openH264Enabled: boolean;
   /**
@@ -29,7 +29,6 @@ export interface SettingsJson {
    * Can be a custom color with nitro, or preset from a theme.
    * * **Note:** Discord will ignore manual updates to this variable
    * @default #000000
-   * @readonly
    */
   BACKGROUND_COLOR: string;
   /**
