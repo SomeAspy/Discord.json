@@ -80,6 +80,7 @@ This is just the `boolean` toggle for Chromium devtools in Discord. **On builds 
 | <a id="start_minimized"></a> `START_MINIMIZED` | `boolean` | Whether Discord minimizes to the tray at startup Controlled by the "Start Discord Minimized" option |
 | <a id="trayballoonshown"></a> `trayBalloonShown` | `boolean` | - |
 | <a id="use_new_updater"></a> `USE_NEW_UPDATER` | `boolean` | - |
+| <a id="webapp_endpoint"></a> `WEBAPP_ENDPOINT` | `string` | Points to the respective endpoint for Discord. ptb has ptb.discord.com, etc. **Default** `"https://discord.com/app"` |
 | <a id="window_bounds"></a> `WINDOW_BOUNDS` | `object` | Location and size of the Discord window |
 | `WINDOW_BOUNDS.height` | `number` | Height of the window in pixels |
 | `WINDOW_BOUNDS.width` | `number` | Width of the window in pixels |
