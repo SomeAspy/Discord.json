@@ -1,0 +1,20 @@
+{
+  "entryPoints": ["settings.json.d.ts"],
+  "out": "./",
+  "cleanOutputDir": false,
+  "plugin": ["typedoc-plugin-markdown", "typedoc-plugin-no-inherit"],
+  "readme": "prepend.md",
+  "mergeReadme": true,
+  "flattenOutputFiles": true,
+  "hideBreadcrumbs": true,
+  "hidePageTitle": true,
+  "hidePageHeader": true,
+  "outputFileStrategy": "modules",
+  "propertiesFormat": "table",
+  "typeDeclarationFormat": "table",
+  "disableSources": true,
+  "inheritNone": true,
+  "tableColumnSettings": {
+    "hideModifiers": true
+  }
+}
