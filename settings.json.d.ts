@@ -16,7 +16,13 @@ export interface SettingsJson {
   SKIP_HOST_UPDATE: boolean;
   SKIP_MODULE_UPDATE: boolean;
   USE_NEW_UPDATER: boolean;
+  /**
+   * @default true
+   */
   offloadAdmControls: boolean;
+  /**
+   * @default [Windows: Undefined | Linux: true]
+   */
   openH264Enabled: boolean;
   /**
    * Whether Chromium Developer Tools are enabled
@@ -32,13 +38,11 @@ export interface SettingsJson {
    */
   BACKGROUND_COLOR: string;
   /**
-   * **Undocumented**
-   * @default true
+   * @default [Windows: true]
    */
   DISCORD_TTI_DNSTCP_WARMUP: boolean;
   /**
-   * **Undocumented**
-   * @default true
+   * @default [Windows: true]
    */
   DESKTOP_TTI_EARLY_UPDATE_CHECK: boolean;
   /**
@@ -74,7 +78,6 @@ export interface SettingsJson {
   trayBalloonShown: boolean;
   asyncVideoInputDeviceInit: boolean;
   /**
-   * **Undocumented**
    * @default "experimental"
    */
   audioSubsystem: "experimental";

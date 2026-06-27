@@ -49,7 +49,7 @@ An attempt at documenting switches in the Discord settings.json
 | <a id="chromiumswitches"></a> `chromiumSwitches` | `object` | unsure if this is different from accepted command line args? **Link** https://peter.sh/experiments/chromium-command-line-switches/ |
 | <a id="dangerous_enable_devtools_only_enable_if_you_know_what_youre_doing"></a> `DANGEROUS_ENABLE_DEVTOOLS_ONLY_ENABLE_IF_YOU_KNOW_WHAT_YOURE_DOING` | `boolean` | Whether Chromium Developer Tools are enabled **Default** `false` |
 | <a id="desktop_tti_early_update_check"></a> `DESKTOP_TTI_EARLY_UPDATE_CHECK` | `boolean` | **Undocumented** **Default** `true` |
-| <a id="discord_tti_dnstcp_warmup"></a> `DISCORD_TTI_DNSTCP_WARMUP` | `boolean` | **Undocumented** **Default** `true` |
+| <a id="discord_tti_dnstcp_warmup"></a> `DISCORD_TTI_DNSTCP_WARMUP` | `boolean` | **Default** `- Windows: true - Linux: false` |
 | <a id="enablehardwareacceleration"></a> `enableHardwareAcceleration` | `boolean` | Whether hardware acceleration is enabled Controlled by the "Enable Hardware Acceleration" setting **Default** `true` |
 | <a id="is_maximized"></a> `IS_MAXIMIZED` | `boolean` | Whether the window is maximized |
 | <a id="is_minimized"></a> `IS_MINIMIZED` | `boolean` | Whether the window is minimized |
