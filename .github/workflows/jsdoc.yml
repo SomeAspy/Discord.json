@@ -22,13 +22,9 @@ jobs:
         with:
           node-version: 24
 
-      - run: npm install -D typescript typedoc typedoc-plugin-markdown
+      - run: npm i typedoc typedoc-plugin-markdown
 
-      - run: npx typedoc --plugin typedoc-plugin-markdown --readme prepend.md --out docs settings.json.d.ts --flattenOutputFiles --hidePageHeader --hideBreadcrumbs
-
-      - run: |
-          mv docs/README.md ./README.md
-          rm -rf docs
+      - run: npm run typedoc --plugin typedoc-plugin-markdown --readme prepend.md --out ./ --cleanOutputDir false settings.json.d.ts --flattenOutputFiles --mergeReadme --hideBreadcrumbs --hidePageTitle --hidePageHeader --outputFileStrategy modules
 
       - name: Commit and Push Changes
         uses: stefanzweifel/git-auto-commit-action@v5
