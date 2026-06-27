@@ -6,7 +6,7 @@ on:
     branches:
       - main
     paths:
-      - "settings.d.ts"
+      - "settings.json.d.ts"
       - "prepend.md"
 
 permissions:
@@ -24,7 +24,7 @@ jobs:
 
       - run: npm install -D typescript typedoc typedoc-plugin-markdown
 
-      - run: npx typedoc --plugin typedoc-plugin-markdown --readme prepend.md --out docs settings.d.ts --flattenOutputFiles --hidePageHeader --hideBreadcrumbs
+      - run: npx typedoc --plugin typedoc-plugin-markdown --readme prepend.md --out docs settings.json.d.ts --flattenOutputFiles --hidePageHeader --hideBreadcrumbs
 
       - run: |
           mv docs/README.md ./README.md
