@@ -23,6 +23,10 @@ The `prepend.md` file is what is attached to the top of the documentation.
 ~/.config/discord/settings.json
 ```
 
+## Note
+`DANGEROUS_ENABLE_DEVTOOLS_ONLY_ENABLE_IF_YOU_KNOW_WHAT_YOURE_DOING` is excluded from the table because it fucks up my tables.
+This is just the `boolean` toggle for Chromium devtools in Discord.
+
 ## Interfaces
 
 ### OpenAsarSettingsJson
@@ -55,7 +59,6 @@ The `prepend.md` file is what is attached to the top of the documentation.
 | <a id="audiosubsystem"></a> `audioSubsystem` | `"experimental"` | **Default** `"experimental"` |
 | <a id="background_color"></a> `BACKGROUND_COLOR` | `string` | Hex color of the theme the Discord client is using Can be a custom color with nitro, or preset from a theme. * **Note:** Discord will ignore manual updates to this variable **Default** `#000000 @readonly` |
 | <a id="chromiumswitches"></a> `chromiumSwitches` | `object` | unsure if this is different from accepted command line args? **Link** https://peter.sh/experiments/chromium-command-line-switches/ |
-| <a id="dangerous_enable_devtools_only_enable_if_you_know_what_youre_doing"></a> `DANGEROUS_ENABLE_DEVTOOLS_ONLY_ENABLE_IF_YOU_KNOW_WHAT_YOURE_DOING` | `boolean` | Whether Chromium Developer Tools are enabled **Default** `false` |
 | <a id="desktop_tti_early_update_check"></a> `DESKTOP_TTI_EARLY_UPDATE_CHECK` | `boolean` | **Default** `[Windows: true]` |
 | <a id="discord_tti_dnstcp_warmup"></a> `DISCORD_TTI_DNSTCP_WARMUP` | `boolean` | **Default** `[Windows: true]` |
 | <a id="enablehardwareacceleration"></a> `enableHardwareAcceleration` | `boolean` | Whether hardware acceleration is enabled Controlled by the "Enable Hardware Acceleration" setting **Default** `true` |
