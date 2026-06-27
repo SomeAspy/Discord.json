@@ -25,11 +25,6 @@ export interface SettingsJson {
    */
   openH264Enabled: boolean;
   /**
-   * Whether Chromium Developer Tools are enabled
-   * @default false
-   */
-  DANGEROUS_ENABLE_DEVTOOLS_ONLY_ENABLE_IF_YOU_KNOW_WHAT_YOURE_DOING: boolean;
-  /**
    * Hex color of the theme the Discord client is using
    * Can be a custom color with nitro, or preset from a theme.
    * * **Note:** Discord will ignore manual updates to this variable
