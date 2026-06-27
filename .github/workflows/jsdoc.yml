@@ -1,0 +1,36 @@
+name: Generate Markdown Docs
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "settings.d.ts"
+      - "prepend.md"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@5
+        with:
+          node-version: 24
+
+      - run: npm install -D typescript typedoc typedoc-plugin-markdown
+
+      - run: npx typedoc --plugin typedoc-plugin-markdown --readme prepend.md --out docs settings.d.ts --flattenOutputFiles --hidePageHeader --hideBreadcrumbs
+
+      - run: |
+          mv docs/README.md ./README.md
+          rm -rf docs
+
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: auto-update readme from .d.ts"
+          file_pattern: "README.md"
