@@ -32,4 +32,4 @@ jobs:
         with:
           add: "-f README.md"
           push: true
-          default_actor: github_actions
+          default_author: github_actions
