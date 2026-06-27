@@ -30,4 +30,6 @@ jobs:
 
       - uses: EndBug/add-and-commit@v10.0.0
         with:
-          add: README.md
+          add: "-f README.md"
+          push: true
+          default_actor: github_actions
