@@ -23,6 +23,11 @@ The `prepend.md` file is what is attached to the top of the documentation.
 ~/.config/discord/settings.json
 ```
 
+### MacOS
+```
+~/Library/Application Support/discord/settings.json
+```
+
 ## Note
-`DANGEROUS_ENABLE_DEVTOOLS_ONLY_ENABLE_IF_YOU_KNOW_WHAT_YOURE_DOING` is excluded from the table because it fucks up my tables.
-This is just the `boolean` toggle for Chromium devtools in Discord.
+`DANGEROUS_ENABLE_DEVTOOLS_ONLY_ENABLE_IF_YOU_KNOW_WHAT_YOURE_DOING` is excluded from the table because it messes up my tables.
+This is just the `boolean` toggle for Chromium devtools in Discord. **On builds other than stable, it defaults to `true`**
