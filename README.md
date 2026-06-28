@@ -64,7 +64,7 @@ This is just the `boolean` toggle for Chromium devtools in Discord. **On builds 
 | <a id="audiosubsystem"></a> `audioSubsystem` | `"experimental"` | **Default** `"experimental"` |
 | <a id="background_color"></a> `BACKGROUND_COLOR` | `string` | Hex color of the theme the Discord client is using Can be a custom color with nitro, or preset from a theme. * **Note:** Discord will ignore manual updates to this variable **Default** `#000000` |
 | <a id="chromiumswitches"></a> `chromiumSwitches` | `object` | unsure if this is different from accepted command line args? **Link** https://peter.sh/experiments/chromium-command-line-switches/ |
-| <a id="desktop_tti_early_update_check"></a> `DESKTOP_TTI_EARLY_UPDATE_CHECK` | `boolean` | **Default** `[Windows: true]` |
+| <a id="desktop_tti_early_update_check"></a> `DESKTOP_TTI_EARLY_UPDATE_CHECK` | `boolean` | **Default** `[Windows: true, MacOS: true]` |
 | <a id="discord_tti_dnstcp_warmup"></a> `DISCORD_TTI_DNSTCP_WARMUP` | `boolean` | **Default** `[Windows: true]` |
 | <a id="enablehardwareacceleration"></a> `enableHardwareAcceleration` | `boolean` | Whether hardware acceleration is enabled Controlled by the "Enable Hardware Acceleration" setting **Default** `true` |
 | <a id="is_maximized"></a> `IS_MAXIMIZED` | `boolean` | Whether the window is maximized |
@@ -79,7 +79,7 @@ This is just the `boolean` toggle for Chromium devtools in Discord. **On builds 
 | <a id="skip_module_update"></a> `SKIP_MODULE_UPDATE` | `boolean` | - |
 | <a id="start_minimized"></a> `START_MINIMIZED` | `boolean` | Whether Discord minimizes to the tray at startup Controlled by the "Start Discord Minimized" option |
 | <a id="trayballoonshown"></a> `trayBalloonShown` | `boolean` | - |
-| <a id="use_new_updater"></a> `USE_NEW_UPDATER` | `boolean` | - |
+| <a id="use_new_updater"></a> `USE_NEW_UPDATER` | `boolean` | **Default** `[MacOS: true]` |
 | <a id="webapp_endpoint"></a> `WEBAPP_ENDPOINT` | `string` | Points to the respective endpoint for Discord. ptb has ptb.discord.com, etc. **Default** `"https://discord.com/app"` |
 | <a id="window_bounds"></a> `WINDOW_BOUNDS` | `object` | Location and size of the Discord window |
 | `WINDOW_BOUNDS.height` | `number` | Height of the window in pixels |
