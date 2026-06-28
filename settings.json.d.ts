@@ -15,6 +15,9 @@ export interface SettingsJson {
    */
   SKIP_HOST_UPDATE: boolean;
   SKIP_MODULE_UPDATE: boolean;
+  /**
+   * @default [MacOS: true]
+   */
   USE_NEW_UPDATER: boolean;
   /**
    * @default true
@@ -36,7 +39,7 @@ export interface SettingsJson {
    */
   DISCORD_TTI_DNSTCP_WARMUP: boolean;
   /**
-   * @default [Windows: true]
+   * @default [Windows: true, MacOS: true]
    */
   DESKTOP_TTI_EARLY_UPDATE_CHECK: boolean;
   /**
